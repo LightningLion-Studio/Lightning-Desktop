@@ -1,10 +1,9 @@
-# Nuxt 3 Minimal Starter
+# 心电社区桌面版
+心电社区桌面版使用了[Nuxt3](https://nuxt.com)作为前端，使用[Tauri](https://tauri.app/zh-cn/)打包成App。
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 部署
 
-## Setup
-
-Make sure to install the dependencies:
+首先下载所需要的包
 
 ```bash
 # yarn
@@ -17,26 +16,12 @@ npm install
 pnpm install --shamefully-hoist
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
+## 使用Tauri
 ```bash
-npm run dev
+# 下载Tauri
+cargo install tauri-cli
+# 初始化
+cargo tauri init
+# 启动项目
+cargo tauri dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
